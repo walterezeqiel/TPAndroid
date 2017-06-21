@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sergiovieyra.a2dointento.MainActivity">
+
+    <TextView
+        android:text="Recivir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDistAng"
+        android:layout_alignStart="@+id/auto"
+
+        android:id="@+id/textoRecivir" />
+
+    <Button
+        android:text="Auto"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto"
+        android:onClick="auto"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="ROT"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/acc"
+        android:layout_toRightOf="@+id/acc"
+        android:layout_toEndOf="@+id/acc"
+        android:id="@+id/gyro"
+        android:onClick="rot"
+        />
+
+    <Button
+        android:text="ACC"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc"
+        android:onClick="acc"
+        android:layout_alignBaseline="@+id/auto"
+        android:layout_alignBottom="@+id/auto"
+        android:layout_toEndOf="@+id/auto"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/textDistAng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/auto"
+
+        android:layout_below="@+id/auto"
+        android:layout_marginTop="71dp"
+        android:text="Distancia , Angulo" />
+
+
+</RelativeLayout>
